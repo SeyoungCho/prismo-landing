@@ -4,6 +4,7 @@ dist/
 .astro/
 .idea/
 .amplify-hosting/
+.vercel/
 # dependencies
 node_modules/
 

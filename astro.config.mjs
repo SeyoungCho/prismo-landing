@@ -1,7 +1,7 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 // import vercelStatic from "@astrojs/vercel/static";
-// import vercel from "@astrojs/vercel/serverless";
+import vercel from "@astrojs/vercel/serverless";
 import awsAmplify from "astro-aws-amplify";
 import sitemap from "@astrojs/sitemap";
 import compressor from "astro-compressor";
