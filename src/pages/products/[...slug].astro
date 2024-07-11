@@ -8,6 +8,7 @@ import { getCollection } from "astro:content";
 import { SITE } from "@data/constants";
 import leatherShoes from "@model/vans_shoes.glb?url";
 import iosLeatherShoes from "@model/vans_shoes.usdz?url";
+import ModelViewer from "@/components/sections/products/ModelViewer";
 
 // Global declaration for gsap animation library
 declare global {
@@ -59,7 +60,7 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
         </p>
       </div>
       <div>
-        <model-viewer 
+        <!-- <model-viewer 
           class="lg:w-[800px] lg:h-[800px] sm:w-[600px] sm:h-[600px] md:w-[500px] md:h-[500px] w-[300px] h-[300px]"
           alt="3D Model" 
           src={leatherShoes} 
@@ -70,8 +71,8 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
           shadow-intensity="1" 
           camera-controls 
           touch-action="pan-y">
-        </model-viewer>
-
+        </model-viewer> -->
+        <ModelViewer client:load/>
         <!-- <Image
           id="fadeInMoveRight"
           src={product.data.main.imgMain}
