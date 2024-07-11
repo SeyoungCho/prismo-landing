@@ -6,9 +6,9 @@ import PrimaryCTA from "@components/ui/buttons/PrimaryCTA.astro";
 import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 import { SITE } from "@data/constants";
-import leatherShoes from "@model/vans_shoes.glb?url";
-import iosLeatherShoes from "@model/vans_shoes.usdz?url";
-import ModelViewer from "@/components/sections/products/ModelViewer";
+// import leatherShoes from "@model/vans_shoes.glb?url";
+// import iosLeatherShoes from "@model/vans_shoes.usdz?url";
+// import ModelViewer from "@/components/sections/products/ModelViewer";
 
 // Global declaration for gsap animation library
 declare global {
@@ -60,19 +60,19 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
         </p>
       </div>
       <div>
-        <!-- <model-viewer 
+        <model-viewer 
           class="lg:w-[800px] lg:h-[800px] sm:w-[600px] sm:h-[600px] md:w-[500px] md:h-[500px] w-[300px] h-[300px]"
           alt="3D Model" 
-          src={leatherShoes} 
-          ios-src={iosLeatherShoes} 
+          src={"/vans_shoes.glb"} 
+          ios-src={"/vans_shoes.usdz"} 
           ar 
           scale="2 2 2"
           tone-mapping="neutral"
           shadow-intensity="1" 
           camera-controls 
           touch-action="pan-y">
-        </model-viewer> -->
-        <ModelViewer client:load/>
+        </model-viewer>
+        <!-- <ModelViewer client:load/> -->
         <!-- <Image
           id="fadeInMoveRight"
           src={product.data.main.imgMain}

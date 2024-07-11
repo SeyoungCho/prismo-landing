@@ -11,7 +11,7 @@ const ModelViewer = () => {
       <div>
         {/* @ts-ignore*/}
         <model-viewer
-          class="h-[300px] w-[300px] sm:h-[600px] sm:w-[600px] md:h-[500px] md:w-[500px] lg:h-[800px] lg:w-[800px]"
+          className="h-[300px] w-[300px] sm:h-[600px] sm:w-[600px] md:h-[500px] md:w-[500px] lg:h-[800px] lg:w-[800px]"
           alt="3D Model"
           src={leatherShoes}
           ios-src={iosLeatherShoes}
