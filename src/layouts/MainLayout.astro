@@ -26,6 +26,7 @@ We set the language of the page to English and add classes for scrollbar and scr
 <html lang={lang} class="scrollbar-hide lenis lenis-smooth scroll-pt-16">
   <head>
     <!-- Adding metadata to the HTML document -->
+    <meta http-equiv="Content-Security-Policy" script-src='unsafe-inline';>
     <Meta meta={meta} structuredData={structuredData} />
     <!-- Define the title of the page -->
     <title>{title}</title>
