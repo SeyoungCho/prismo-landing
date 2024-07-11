@@ -1,0 +1,67 @@
+{
+  "title": "Simple, Rational Plan",
+  "subTitle": "Elevate Your Business with Web, AR, 3D, and Data Expertise",
+  "badge": "추천",
+  "thirdOption": "Enterprise Solutions?",
+  "btnText": "Get a Custom Quote",
+
+  "webPlan": {
+    "name": "웹 제작",
+    "description": "AR필터가 필요한 웹사이트 제작을 도와드립니다.",
+    "price": "49",
+    "cents": ".00",
+    "billingFrequency": "USD / monthly",
+    "features": [
+      "Key hardware tools",
+      "Access to guides & tutorials",
+      "Standard support"
+    ],
+    "purchaseBtnTitle": "Get the Starter Kit",
+    "purchaseLink": "#"
+  },
+
+  "arPlan": {
+    "name": "AR 제작",
+    "description": "AR필터가 필요한 웹사이트 제작을 도와드립니다.",
+    "price": "49",
+    "cents": ".00",
+    "billingFrequency": "USD / monthly",
+    "features": [
+      "Key hardware tools",
+      "Access to guides & tutorials",
+      "Standard support"
+    ],
+    "purchaseBtnTitle": "Get the Starter Kit",
+    "purchaseLink": "#"
+  },
+
+  "modelingPlan": {
+    "name": "3D 모델링",
+    "description": "AR필터가 필요한 웹사이트 제작을 도와드립니다.",
+    "price": "49",
+    "cents": ".00",
+    "billingFrequency": "USD / monthly",
+    "features": [
+      "Key hardware tools",
+      "Access to guides & tutorials",
+      "Standard support"
+    ],
+    "purchaseBtnTitle": "Get the Starter Kit",
+    "purchaseLink": "#"
+  },
+
+  "dashboardPlan": {
+    "name": "데이터 대시보드 제공",
+    "description": "AR필터가 필요한 웹사이트 제작을 도와드립니다.",
+    "price": "49",
+    "cents": ".00",
+    "billingFrequency": "USD / monthly",
+    "features": [
+      "Key hardware tools",
+      "Access to guides & tutorials",
+      "Standard support"
+    ],
+    "purchaseBtnTitle": "Get the Starter Kit",
+    "purchaseLink": "#"
+  }
+}
