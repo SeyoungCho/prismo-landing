@@ -1,0 +1,146 @@
+---
+// Import the necessary components
+import MainLayout from "@/layouts/MainLayout.astro";
+import HeroSection from "@components/sections/landing/HeroSection.astro";
+import HeroSectionAlt from "@components/sections/landing/HeroSectionAlt.astro";
+import ClientsSection from "@components/sections/landing/ClientsSection.astro";
+import FeaturesGeneral from "@components/sections/features/FeaturesGeneral.astro";
+import FeaturesNavs from "@components/sections/features/FeaturesNavs.astro";
+import TestimonialsSection from "@components/sections/testimonials/TestimonialsSection.astro";
+import PricingSection from "@components/sections/pricing/PricingSection.astro";
+import FAQ from "@components/sections/misc/FAQ.astro";
+import AnnouncementBanner from "@components/ui/banners/AnnouncementBanner.astro";
+import visionProMainImageImage from "@images/visionProMainImage.png";
+import faqs from "@data/faqs.json";
+import features from "@data/features.json";
+import pricing from "@data/pricing.json";
+
+import trackingTypesImage from "@images/tracking_types/world_tracking.jpg"
+import imageTrackingImage from "@images/tracking_types/image_tracking.jpg";
+import faceFilterImage from "@images/tracking_types/face_filter.jpg";
+import middleSectionImage from "@images/middle_section_image.png";
+
+const avatarSrcs: Array<string> = [
+  "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+  "https://images.unsplash.com/photo-1531927557220-a9e23c1e4794?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+  "https://images.unsplash.com/photo-1541101767792-f9b2b1c4f127?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&&auto=format&fit=facearea&facepad=3&w=300&h=300&q=80",
+  "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+];
+---
+
+<MainLayout>
+  <AnnouncementBanner
+    btnId="dismiss-button"
+    btnTitle="Explore ScrewFast on GitHub"
+    url="https://github.com/mearashadowfax/ScrewFast"
+  />
+
+  <HeroSection
+    title=`We create Your favorite <span
+        class="text-yellow-500 dark:text-yellow-400">Technology</span>`
+    subTitle="PrismO'verse is an immersive tech company based in Seoul, Korea. We always search for ways to amaze you and the world, delivering the most futuristic technologies."
+    primaryBtn="문의하기"
+    primaryBtnURL="/contact"
+    secondaryBtn="Contact Sales Team"
+    secondaryBtnURL="/contact"
+    withReview={true}
+    avatars={avatarSrcs}
+    rating=`<span class="font-bold">4.8</span> / 5`
+    starCount={4}
+    reviews=`From Over <span class="font-bold">12.8k</span> Reviews`
+    src={visionProMainImageImage}
+    alt="Stack of ScrewFast product boxes containing assorted hardware tools"
+  />
+
+  <FeaturesGeneral
+    title="AR Solution"
+    subTitle="우리의 AR 솔루션은 고객님께 몰입감 있는 경험을 제공하여 브랜드에 대한 긍정적인 인식을 형성하고, 상호작용을 통한 높은 참여도를 유도합니다. 독창적이고 차별화된 마케팅 전략을 통해 경쟁사와 차별화되며, 사용자의 행동 데이터를 실시간으로 수집하여 맞춤형 마케팅 전략을 최적화할 수 있습니다."
+    src={middleSectionImage}
+    alt="PrismOverse products in floating boxes"
+    features={features}
+  />
+ 
+  <FeaturesNavs
+    title=`Unlock the full potential of <span class="text-yellow-500 dark:text-yellow-400">PrismOverse</span>'s AR solutions to transform your marketing, interior design, and social media experiences.`
+    tabs={[
+      {
+        heading: "Plane Tracking",
+        content:
+          "플레인 트래킹은 평면을 인식하여 그 위에 가상 객체를 배치하는 기술입니다. 사용자가 스마트폰이나 태블릿을 통해 바닥, 테이블, 벽 등의 평면을 스캔하면, 해당 공간에 가상 가구, 인테리어 소품 등을 배치할 수 있습니다. 이는 가구 배치 시뮬레이션, 인테리어 디자인, 교육용 콘텐츠 등 다양한 분야에 활용할 수 있습니다.",
+        svg: "tools",
+        src: trackingTypesImage,
+        alt: "Yellow and black heavy equipment on brown grass field",
+        first: true,
+      },
+      {
+        heading: "Image Tracking",
+        content:
+          "이미지 트래킹은 특정 이미지를 인식하여 그 위에 가상 콘텐츠를 표시하는 기술입니다. 사용자가 카메라를 통해 이미지를 스캔하면, 해당 이미지에 맞춰 3D 모델, 애니메이션, 텍스트 등의 AR 콘텐츠가 나타납니다. 이는 제품 카탈로그, 포스터, 브로셔 등 다양한 마케팅 자료에 적용할 수 있어 사용자에게 새로운 경험을 제공합니다.",
+        svg: "dashboard",
+        src: imageTrackingImage,
+        alt: "A screenshot or graphic representation of the intuitive dashboard",
+        second: true,
+      },
+      {
+        heading: "Face Filter",
+        content:
+          "페이스 필터는 사용자의 얼굴을 인식하여 가상 콘텐츠를 적용하는 기술입니다. 사용자가 카메라를 통해 자신의 얼굴을 비추면, 다양한 이펙트나 3D 객체가 얼굴에 적용됩니다. 이는 소셜 미디어에서 인기를 끌고 있는 기능으로, 마케팅 캠페인, 브랜딩, 엔터테인먼트 등에서 효과적으로 활용할 수 있습니다.",
+        svg: "house",
+        src: faceFilterImage,
+        alt: "Gray metal building frame near tower crane during daytime",
+      },
+    ]}
+  />
+
+  <TestimonialsSection
+    title="Unlocking Boundless Creativity Through our accessible AR Solution"
+    subTitle=`PrismOverse is revolutionizing the accessibility of augmented reality by breaking down technical barriers. Our platform empowers everyone, regardless of their technical background, to effortlessly create and experience the enchanting world of AR. You can bring your imagination to life and explore immersive, interactive contents.`
+    ;
+    testimonials={[
+      {
+        content:
+          "ScrewFast dramatically boosted our project efficiency. Setup was instant, and their rapid response times are phenomenal. Truly a game-changer in hardware and construction support!",
+        author: "Samantha Ruiz",
+        role: "Chief Operating Officer | ConstructIt Inc.",
+        avatarSrc:
+          "https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
+      },
+    ]}
+    statistics={[
+      {
+        count: "4.7 / 5.0",
+        description:
+          "솔루션 도입 후 고객 평점",
+      },
+      {
+        count: "3.1min",
+        description:
+          "AR콘텐츠 평균 시청 시간",
+      },
+      {
+        count: "30%",
+        description:
+          "AR콘텐츠 도입 후, 평균 고객 증가율",
+      },
+      {
+        count: "47%",
+        description: "AR콘텐츠가 있는 사이트 재방문율",
+      },
+    ]}
+  />
+
+  <PricingSection pricing={pricing} />
+
+  <ClientsSection
+    title="프리즈모버스와 함께 합니다."
+    subTitle="우리는 파트너들과의 강력한 네트워크를 통해 지속적으로 혁신을 추구하며, 새로운 가능성을 탐색하고 있습니다"
+  />
+
+  <FAQ title="Frequently<br />asked questions" faqs={faqs} />
+
+  <HeroSectionAlt
+    title="Let's Build Together"
+    subTitle="ScrewFast is an open-source template, meticulously crafted with Astro, Tailwind CSS, and Preline UI frameworks."
+    url="https://github.com/mearashadowfax/ScrewFast"
+  />
+</MainLayout>
