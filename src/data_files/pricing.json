@@ -12,9 +12,9 @@
     "cents": ".00",
     "billingFrequency": "USD / monthly",
     "features": [
-      "Key hardware tools",
-      "Access to guides & tutorials",
-      "Standard support"
+      "AR기능이 들어간 웹사이트를 제작 및 배포해드립니다.",
+      "기존 보유하신 웹사이트에도 추가 기능을 제공해드립니다.",
+      "3D 오브젝트만 바꾸어 손쉽게 커스터마이징 하실 수 있습니다."
     ],
     "purchaseBtnTitle": "Get the Starter Kit",
     "purchaseLink": "#"
@@ -27,9 +27,9 @@
     "cents": ".00",
     "billingFrequency": "USD / monthly",
     "features": [
-      "Key hardware tools",
-      "Access to guides & tutorials",
-      "Standard support"
+      "브랜딩 AR 콘텐츠부터 웹사이트 내 AR 뷰어까지 모든 AR 솔루션을 제공합니다.",
+      "이미지 트래킹, 플레인 트래킹, 페이스 트래킹 등 다양한 트래킹 유형을 통해 콘텐츠를 제공합니다",
+      "웹 AR은 추가적인 app 설치 없이, QR코드 혹은 링크 접속을 통해 바로 체험할 수 있습니다."
     ],
     "purchaseBtnTitle": "Get the Starter Kit",
     "purchaseLink": "#"
@@ -42,9 +42,9 @@
     "cents": ".00",
     "billingFrequency": "USD / monthly",
     "features": [
-      "Key hardware tools",
-      "Access to guides & tutorials",
-      "Standard support"
+      "귀여운 컨셉의 low-poly 오브젝트를 모델링해드립니다.",
+      "실사에 가깝고나 정교한 오브젝트 또한 모델링해드립니다.",
+      "실물을 정확하게 보여주는 것이 중요한 경우 실물을 직접 3D 스캐닝하여 모델링할 수 있습니다."
     ],
     "purchaseBtnTitle": "Get the Starter Kit",
     "purchaseLink": "#"
@@ -57,9 +57,9 @@
     "cents": ".00",
     "billingFrequency": "USD / monthly",
     "features": [
-      "Key hardware tools",
-      "Access to guides & tutorials",
-      "Standard support"
+      "조회수, 공유횟수, 촬영횟수 등 다양한 데이터를 제공해드립니다.",
+      "그 외 필요한 데이터를 수집할 수 있도록 커스텀으로 구현해드립니다.",
+      "사용자 데이터를 편하게 볼 수 있도록 대시보드를 GUI형태로 제공해드립니다."
     ],
     "purchaseBtnTitle": "Get the Starter Kit",
     "purchaseLink": "#"
